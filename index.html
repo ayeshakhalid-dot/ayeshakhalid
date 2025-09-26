@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Portfolio — Ayesha Khalid</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" role="navigation">
+    <div class="brand">AyeshaKhalid</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="accent">Ayesha Khalid</span></h1>
+        <p class="lead">Full-Stack Developer & 3D Web Engineer — I build polished, performant, interactive experiences.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+        <div class="socials" aria-hidden="false">
+          <a href="https://www.linkedin.com/in/saba-khalid-337251382" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:ayesha785k8@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- WebGL canvas container -->
+        <div class="hero-right">
+            <img src="bg.jpg" alt="Your Photo" class="hero-pic">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section card">
+  <h2>About Me</h2>
+  <p>
+    I am a Full Stack Developer skilled in HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.
+    I create modern, responsive, and animated web applications with clean design and high performance.
+  </p>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="section card">
+  <h2>Certificates</h2>
+  <div class="cert-list">
+    <div class="cert-item">
+      <i class="fa-solid fa-certificate"></i>
+      <div>
+        <h3>Full Stack Web Development</h3>
+        <p>Issued by Peak Solution</p>
+      </div>
+    </div>
+    <div class="cert-item">
+      <i class="fa-solid fa-award"></i>
+      <div>
+        <h3>Frontend Development (HTML, CSS, JS)</h3>
+        <p>Issued by Peak Solution </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SERVICES -->
+    <section id="services" class="section cards">
+      <h2>Services</h2>
+      <div class="card-grid" role="list">
+        <div class="card-item" role="listitem"><i class="fa-solid fa-code"></i><h3>Full Stack Development</h3><p>I build websites from start to finish – frontend, backend, and everything in between.</p></div>
+        <div class="card-item" role="listitem">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Responsive Designs</h3>
+        <p>I create responsive designs that look great on mobiles, tablets, and desktops.</p>
+        </div>
+
+        <div class="card-item" role="listitem">
+        <i class="fa-solid fa-cubes"></i>
+        <h3>3D Animated Pages</h3>
+        <p>I build 3D animated pages that make websites feel alive and interactive.</p>
+</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+<section id="skills" class="section card">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-brands fa-html5"></i> HTML
+      </div>
+      <div class="skill-bar"><span style="width:95%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-brands fa-css3-alt"></i> CSS
+      </div>
+      <div class="skill-bar"><span style="width:93%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-brands fa-js"></i> JavaScript
+      </div>
+      <div class="skill-bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-brands fa-php"></i> PHP
+      </div>
+      <div class="skill-bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-solid fa-database"></i> MySQL
+      </div>
+      <div class="skill-bar"><span style="width:88%"></span></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <i class="fa-brands fa-bootstrap"></i> Bootstrap
+      </div>
+      <div class="skill-bar"><span style="width:87%"></span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS (3D Slider) -->
+<!-- PROJECTS (Cards with Popup) -->
+<section id="projects" class="section projects">
+  <h2>Latest Projects</h2>
+
+  <div class="project-grid">
+    <!-- Card 1 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1fyv008-Jgsq7ATRymkMNTCnMaPPYdgzf/preview">
+      <h3>Zeenat Hospital</h3>
+      <p>Full Stack hospital management web app with patient records and appointments.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1zbemVo3jhlMIhJfvg4d4f9baHB2FLPkR/preview">
+      <h3>Umrah Travels</h3>
+      <p>Full Stack travel booking platform with packages and user dashboards.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1gjPHp-kM8mclDZskYAJKZdgGxxD1DH20/preview">
+      <h3>Ayesha College</h3>
+      <p>Lightweight full stack portal for college management.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1gjPHp-kM8mclDZskYAJKZdgGxxD1DH20/preview">
+      <h3>Beauty & Bliss</h3>
+      <p>Detailed landing page with animations for a beauty brand.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1hTPD-QNJ2G7wt1boa8a3eBoo6O7SV7XL/preview">
+      <h3>Rental Car</h3>
+      <p>3D animated landing page for rental car booking service.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="project-card" data-video="https://drive.google.com/file/d/1eyG07P6QWKztoGEY6pAIWtZ08BmSZjKg/preview">
+      <h3>Aims Company</h3>
+      <p>Full stack business website with dynamic services and dashboards.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="videoModal" class="project-modal">
+  <div class="project-modal-content">
+    <button class="close-btn">&times;</button>
+    <iframe id="videoFrame" allow="autoplay"></iframe>
+  </div>
+</div>
+ <!-- CONTACT -->
+<section id="contact" class="section card">
+  <h2>Contact</h2>
+  <div class="contact-wrapper">
+    
+    <!-- Left: Form -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" rows="5" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <!-- Right: Socials -->
+    <div class="contact-socials">
+      <h3>Connect With Me</h3>
+      <a href="mailto:ayesha785k8@gmail.com" target="_blank" class="social-link">
+        <i class="fa-solid fa-envelope"></i> ayesha785k8@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/saba-khalid-337251382" target="_blank" class="social-link">
+        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/saba-khalid
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Ayesha Khalid. — Full Stack Developer</p>
+  </footer>
+
+  <!-- Libraries (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- App -->
+  <script src="script.js"></script>
+</body>
+</html>
