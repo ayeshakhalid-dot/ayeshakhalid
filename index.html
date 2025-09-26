@@ -14,17 +14,23 @@
 </head>
 <body>
   <!-- NAV -->
-  <header class="nav" role="navigation">
-    <div class="brand">AyeshaKhalid</div>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+ <header class="nav">
+  <div class="brand">Ayesha Khalid</div>
+
+  <div class="hamburger" onclick="document.querySelector('.nav nav').classList.toggle('active')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 
   <!-- HERO -->
   <main>
@@ -238,3 +244,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
