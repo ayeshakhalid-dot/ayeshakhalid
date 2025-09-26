@@ -943,88 +943,87 @@ footer {
   transform: translateZ(40px) scale(1.2);
 }
 /* =========================
-   Responsive Design
+ /* =========================
+   Extra Responsive Fixes
 ========================= */
 
-/* Tablet view (max-width 992px) */
+/* Tablet view (<= 992px) */
 @media (max-width: 992px) {
-  .nav nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
   .hero {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: 24px;
   }
 
   .hero-left {
-    max-width: 100%;
     margin-bottom: 20px;
   }
 
   .hero-right {
-    max-width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .hero-pic {
-    width: 70%;
-    height: auto;
-  }
-}
-
-/* Mobile view (max-width 576px) */
-@media (max-width: 576px) {
-  .brand {
-    font-size: 1.2rem;
-  }
-
-  .nav nav a {
-    font-size: 0.9rem;
-    padding: 6px;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
+  .hero-left h1 {
+    font-size: 1.8rem; /* tablet heading chhoti */
   }
 
   .lead {
     font-size: 1rem;
   }
 
+  .canvas-wrap {
+    height: 300px;
+  }
+}
+
+/* Mobile view (<= 576px) */
+@media (max-width: 576px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 16px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.4rem;   /* heading aur chhoti */
+    line-height: 1.3;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
   .actions {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    align-items: center;
   }
 
-  .hero-pic {
-    width: 90%;   /* mobile par choti hogi */
-    max-width: 250px;
-    border-radius: 10px;
+  .btn,
+  .btn.ghost {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr; /* skills single column ho jayengi */
+  .hero-pic,
+  .canvas-wrap {
+    width: 85%;       /* mobile par pic chhoti */
+    max-width: 200px; /* aur limit bhi */
+    height: auto;
+    margin: 0 auto;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr; /* services ek ek card */
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr; /* projects bhi ek ek card */
-  }
-
+  .card-grid,
+  .skills-grid,
+  .project-grid,
   .contact-wrapper {
-    flex-direction: column;
-    gap: 20px;
+    grid-template-columns: 1fr !important;
   }
 
   .contact-socials {
     text-align: center;
   }
 }
-
