@@ -942,3 +942,89 @@ footer {
 .project-card:hover i {
   transform: translateZ(40px) scale(1.2);
 }
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablet view (max-width 992px) */
+@media (max-width: 992px) {
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-pic {
+    width: 70%;
+    height: auto;
+  }
+}
+
+/* Mobile view (max-width 576px) */
+@media (max-width: 576px) {
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .nav nav a {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-pic {
+    width: 90%;   /* mobile par choti hogi */
+    max-width: 250px;
+    border-radius: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* skills single column ho jayengi */
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr; /* services ek ek card */
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* projects bhi ek ek card */
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-socials {
+    text-align: center;
+  }
+}
+
